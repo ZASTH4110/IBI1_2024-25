@@ -1,6 +1,21 @@
-I like getting GitHub to work
-I like music
-I like pork pies
-I like crisps
-I like tea very much
-I like Radio 4
+I like basketball
+I like ice
+I like delicious food
+I like computer games
+<<<<<<< HEAD
+=======
+i like book
+>>>>>>> Alex
+I like writing
+I like reading
+I like love
+I like china 
+I like you
+I like my family
+I like 17 very much
+<<<<<<< HEAD
+I don't like cheat
+I like travel
+=======
+I don't like cheat
+>>>>>>> Alex
