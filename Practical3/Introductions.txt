@@ -1,4 +1,0 @@
-Hello, my name is Hao Ziteng.
-I like drinking tea and eating sweet food.
-I am enjoying learning IBI1 in 
-I am happy that I can push my repo from Visual Studio Code to GitHub
