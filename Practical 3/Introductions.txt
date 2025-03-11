@@ -1,5 +1,5 @@
 Hello, my name is Hao Ziteng.
 I like drinking tea and eating sweet food.
 I like playing basketball and football.
-I am enjoying learning IBI1.
+I enjoy learning IBI1.
 I am happy that I can push my repo from Visual Studio Code to GitHub.
