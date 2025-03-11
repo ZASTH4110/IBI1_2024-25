@@ -2,5 +2,5 @@ During this course, I have learnt version control, how to navigate Unix-like sys
 I meet question when I use the "git merge" because I don't know what changed when I merge the branch to the master
 I also find that in my window systems. The "master" is called "main".
 I gradually know how to use the git and GitHub.I really enjoy this process.
-I have mastered the advantages and basic operations of version control.
+I have learned the advantages and basic operations of version control.
 I'm looking forward to the next IBI lecture.
