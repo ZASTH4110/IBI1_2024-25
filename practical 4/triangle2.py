@@ -10,4 +10,5 @@ def triangular_number(n):
 # Print the first ten triangular numbers
 print("The first ten triangular numbers are:")
 for i in range(1, 11):  # Loop from 1 to 10
-    print(triangular_number(i))  # Display the calculated triangular number
+    print("n=" ,i," Tn = ", triangular_number(i))
+    #Display the calculated triangular number
