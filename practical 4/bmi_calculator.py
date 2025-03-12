@@ -1,4 +1,3 @@
-# Pseudocode:
 # 1. Prompt the user to input their weight in kg.
 # 2. Prompt the user to input their height in meters.
 # 3. Convert the inputs into floating-point numbers for calculation.
