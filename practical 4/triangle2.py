@@ -1,6 +1,7 @@
-# 1. Define a function to calculate the nth triangular number.
-# 2. Use a loop to calculate and print the first ten triangular numbers.
-# 3. Ensure that the output matches the expected values.
+# 1. Initialize a variable x to store the result.(ensure x = 0)
+# 2. Write a formula that  expresses the general term formula for Tn（Tn = n * (n + 1) / 2）
+# 3. In each cycle, add the current number to x.（x += i）
+# 4. Print the current value of x after each addition.（x = Tn)(n=i)
 
 # Function to calculate the nth triangular number
 def triangular_number(n):
