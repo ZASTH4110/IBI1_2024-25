@@ -1,7 +1,7 @@
-# 1. Initialize a variable x to store the sum (triangular number).
-# 2. Use a loop from 1 to 10 to calculate triangular numbers.
-# 3. In each cycle, add the current number to x.
-# 4. Print the current value of x after each addition.
+# 1. Initialize a variable x to store the result.(ensure x = 0)
+# 2. Write a formula that describes the relationship between the previous triangle and the next triangle.（Tn = Tn-1 + n）
+# 3. In each cycle, add the current number to x.（x += i）
+# 4. Print the current value of x after each addition.（x = Tn)(n=i)
 x = 0
 
 print("The first ten triangular numbers are:")
