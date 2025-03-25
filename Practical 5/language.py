@@ -12,6 +12,8 @@ import matplotlib.pyplot as plt
 languages = list(language_usage.keys())
 percentages = list(language_usage.values())
 
+plt.figure(figsize=(10,6))
+
 bars = plt.bar(languages, percentages,color='skyblue',edgecolor='black',linewidth=1.2,width=0.5)
 plt.title("Programming Language Popularity (Feb 2024)", fontsize=16, fontweight='bold')
 plt.xlabel("Programming Languages", fontsize=12)
@@ -28,7 +30,7 @@ plt.show()
 language = "Python"  # Change this variable to the language you want to enter
 
 if language in language_usage:
-    print(f"{language}: {language_usage[language]}% of developers use this language.")
+    print(f"{language}: {language_usage[language]}% of developers use this language.")#f{language} means the content of language
 else:
     print(f"{language} is not in the list.")
 
