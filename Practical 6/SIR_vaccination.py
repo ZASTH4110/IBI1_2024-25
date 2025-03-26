@@ -37,6 +37,8 @@ for idx, rate in enumerate(vaccination_rates):
             infection_prob = min(max(infection_prob, 0), 1)
             new_infected = np.random.choice([0, 1], size=S, p=[1 - infection_prob, infection_prob]).sum()
         else:
+
+            
             new_infected = 0
 
         if I > 0:
