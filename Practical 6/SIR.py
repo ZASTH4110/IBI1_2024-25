@@ -53,7 +53,6 @@ for i in range(1000):
 
     
 plt.figure(figsize = (6,4) , dpi =150)
-plt.figure(figsize=(10,6))
 plt.plot(S_array, label = 'Susceptible', color = 'blue')
 plt.plot(I_array, label = 'Infected', color = 'red')
 plt.plot(R_array, label = 'Recovered', color = 'green')
