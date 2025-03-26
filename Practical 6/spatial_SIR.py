@@ -1,3 +1,23 @@
+# Firstly, create a 2D spatial 100x100 grid of susceptible individuals. 
+    # population = np.zeros((100,100))
+# Secondly, randomly choose a single individual to be infected
+    # randomly choose two number as x and y to represent the position of the infected individual
+    # outbreak = np.random.choice(range(100),2) 
+    # position = [outbreak[0], outbreak[1]] let position = 1
+# Thrid, set basic parameters
+# Fourth, Construct the mechanism of neighborhood infection and recovery
+    # For each infected cell (x, y) in the grid:
+    #     For each of the 8 neighboring positions (dx, dy):
+    #         Skip the current cell itself (when dx == 0 and dy == 0)
+    #         Calculate the neighbor’s position (nx, ny) = (x + dx, y + dy)
+    #         If the neighbor is inside the grid and is susceptible:
+    #            With probability β, mark the neighbor for infection( = 1)
+    # After checking neighbors:
+    #     - With probability γ, the infected cell recovers (= 2)
+
+# Fifth, plot the grid at plot_time 
+
+
 # import necessary libraries
 import numpy as np
 import matplotlib.pyplot as plt
@@ -23,12 +43,9 @@ for i in range(101):
                     if dx == 0 and dy == 0:
                         continue
                     nx, ny = x + dx, y + dy
-                    # 判断是否在地图内并且是易感者，再进行感染尝试
                     if 0 <= nx < 100 and 0 <= ny < 100 and population[nx, ny] == 0:
                         if np.random.rand() < beta:
                             new_infections.append((nx, ny))
-
-             # 感染者可能恢复
              if np.random.rand() < gamma:
                 population[x, y] = 2
     for (nx, ny) in new_infections:
