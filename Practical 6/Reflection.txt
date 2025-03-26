@@ -1,0 +1,9 @@
+This practical was quite challenging, especially the part about implementing the neighborhood infection and recovery mechanism.
+It required a lot of logical thinking, but I really enjoyed the process.
+Through this task, I feel that my coding skills improved a lot. 
+I gained a deeper understanding of "for" loops 
+I learned how important it is to break a problem down into clear steps. Finding the right approach to each part of the task was the key.
+When building the model, I learned a lot about data types through the flexible transformation of several different types of data.
+In the construction of two-dimensional model, I first contact with the bivariate coding logic
+Overall, it was a rewarding experience that helped me grow in both problem-solving and programming.
+
