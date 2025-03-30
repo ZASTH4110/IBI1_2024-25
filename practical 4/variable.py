@@ -13,6 +13,8 @@ f = d + e  # Total time for car-based commute
 # Checking which is quicker
 if c < f:
     quicker_method = "Bus"
+elif c == f:
+    quicker_method = "Both are equal"
 else:
     quicker_method = "Car"
 print("The quicker method is:", quicker_method)
@@ -34,6 +36,3 @@ W = X and Y
 # True | False | False
 # False | True  | False
 # False | False | False
-
-# The truth table confirms that W correctly represents the AND operation
-#
