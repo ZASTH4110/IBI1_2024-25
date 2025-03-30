@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer:Simulate two dice until the same number of rolls is rolled, and record the number of attempts required
+# Answer:Roll two dice until they show the same number, count how many tries it takes and record it in the variable progress.
 
 # Import libraries
 # randint allows drawing a random number,
@@ -24,4 +24,3 @@ while progress>=0:
 		# If the numbers are the same, print the number of attempts and break the loop
 		print(progress)
 		break
-
