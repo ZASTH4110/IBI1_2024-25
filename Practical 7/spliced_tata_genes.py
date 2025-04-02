@@ -38,7 +38,7 @@ if current_gene and splice_signal in current_seq:
 
 with open(output_filename, "w") as out:
     for gene, (seq, count) in tata_genes.items():
-        out.write(f">{gene} TATA_boxes:{count}\n")
+        out.write(f">{gene}\nTATA_boxes:{count}\n")
         out.write(seq + "\n")
 
 print(f" Done! Found {len(tata_genes)} spliced genes containing TATA box and the splice signal {splice_signal}. Results written to {output_filename}")
