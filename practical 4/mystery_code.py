@@ -15,7 +15,7 @@ progress=0
 while progress>=0:
 # These two lines of code repeat indefinitely until the condition is met and the loop is exited.
 	progress+=1
-	# Add 1 to the progress counter， Record how many times the loop has been executed
+	# Add 1 to the progress counter, Record how many times the loop has been executed
 	first_n = randint(1,6)
 	second_n = randint(1,6)
 	# Simulate the number of points on two dice
