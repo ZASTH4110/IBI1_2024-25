@@ -3,9 +3,9 @@
 # 3. Convert the inputs into floating-point numbers for calculation.
 # 4. Calculate BMI using the formula: BMI = weight / (height ** 2).
 # 5. Use conditional statements to determine the BMI category:
-#    - BMI < 18.5 → "Underweight"
-#    - 18.5 ≤ BMI < 30 → "Normal weight"
-#    - BMI ≥ 30 → "Obese"
+#    - BMI < 18.5  "Underweight"
+#    - 18.5 <= BMI < 30  "Normal weight"
+#    - BMI >= 30  "Obese"
 # 6. Display the BMI result along with the category.
 
 
