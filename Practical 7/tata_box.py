@@ -25,11 +25,11 @@ with open("Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa", "r") as data:
     if current_gene and tata_box.search(current_seq):
         tata_genes[current_gene] = current_seq
 
-# 写入筛选出的基因序列到新 FASTA 文件
 with open("tata_genes.fa", "w") as out:
     for gene, seq in tata_genes.items():
         out.write(f">{gene}\n")
         for i in range(0, len(seq), 60):
             out.write(seq[i:i+60] + "\n")
 
-print(f"✅ 完成！共筛选出 {len(tata_genes)} 条包含 TATAWAW 模式的基因，结果已写入 tata_genes.fa")
+print(f" Finished! A total of {len(tata_genes)} genes containing the TATAWAW motif have been selected and written to tata_genes.fa.")
+
