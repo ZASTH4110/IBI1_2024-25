@@ -1,7 +1,7 @@
 # 1. Initialize a variable x to store the result.(ensure x = 0)
-# 2. Describes the relationship between the previous triangle and the next triangle.（Tn = Tn-1 + n）
-# 3. In each cycle, add the current number to x.（x += i）
-# 4. Print the current value of x after each addition.（x = Tn) (n=i)
+# 2. Describes the relationship between the previous triangle and the next triangle.(Tn = Tn-1 + n)
+# 3. In each cycle, add the current number to x.(x += i)
+# 4. Print the current value of x after each addition.(x = Tn) (n=i)
 x = 0
 # Initialize x to 0 to store the triangular number
 
