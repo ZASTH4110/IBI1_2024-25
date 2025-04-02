@@ -5,13 +5,13 @@
 #        china_provinces = [65.77, 41.88, 45.28, 61.27, 85.15]
 #        china_names = ["Zhejiang", "Fujian", "Jiangxi", "Anhui", "Jiangsu"]
 # Step 3:draw a pie chart for the UK countries
-#        use matplotlib.pyplot to create a pie chart （plt.pie）
-#        Set the title and labels for the chart （plt.title, plt.xlabel, plt.ylabel）
-#        Set the colors for each section of the pie chart （colors）
+#        use matplotlib.pyplot to create a pie chart (plt.pie)
+#        Set the title and labels for the chart (plt.title, plt.xlabel, plt.ylabel)
+#        Set the colors for each section of the pie chart (colors)
 # Step 4:draw a pie chart for the China provinces
-#        use matplotlib.pyplot to create a pie chart （plt.pie）
-#        Set the title and labels for the chart （plt.title, plt.xlabel, plt.ylabel）
-#        Set the colors for each section of the pie chart （colors）
+#        use matplotlib.pyplot to create a pie chart (plt.pie)
+#        Set the title and labels for the chart (plt.title, plt.xlabel, plt.ylabel)
+#        Set the colors for each section of the pie chart (colors)
 # Step 5:show the pie charts
 
 # create a list of countries and their populations
