@@ -1,6 +1,6 @@
 import re as re
 seq = 'ATGCAAGTGGTGTGTCTGTTCTGAGAGGGCCTAA'
-Intron = re.findall(r'GT[ATCG]{0,10000}?AG', seq)
+Intron = re.findall(r'GT\S+AG', seq)
 longest_intron = max(Intron, key=len)
 print("Longest possible intron found:")
 print(f"Sequence: {longest_intron}")
