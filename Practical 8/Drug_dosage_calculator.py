@@ -16,9 +16,9 @@ def calculate_paracetamol_volume(weight_kg, strength):
 
     # Check if strength is valid and calculate mg per ml
     if strength == "120 mg/5 ml":
-        concentration = 120 / 5  # 24 mg per ml
+        concentration = 120 / 5  
     elif strength == "250 mg/5 ml":
-        concentration = 250 / 5  # 50 mg per ml
+        concentration = 250 / 5  
     else:
         return "Error: Strength must be '120 mg/5 ml' or '250 mg/5 ml'."
 
@@ -31,7 +31,7 @@ def calculate_paracetamol_volume(weight_kg, strength):
     return round(volume_ml, 2)  # Round to 2 decimal places
 
 
-# Example calls
+# Examples
 print(calculate_paracetamol_volume(30, "120 mg/5 ml"))  # Output: 18.75 ml
 print(calculate_paracetamol_volume(45, "250 mg/5 ml"))  # Output: 13.5 ml
 print(calculate_paracetamol_volume(110, "120 mg/5 ml"))   # Output: Error: Weight must be between 10 and 100 kg.
