@@ -10,4 +10,3 @@ class patients():
 #example of creating a patient object and printing the information
 patient1 = patients("John Doe", 30, "2023-10-01", "No known allergies")
 patient1.print_information_of_patient()
-print(patient1.print_information_of_patient())
