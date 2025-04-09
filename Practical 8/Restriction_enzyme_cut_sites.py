@@ -1,17 +1,15 @@
 import re
 
 def find_restriction_sites(DNA_sequence, enzyme_sequence):
-    """
-    Uses regular expressions to find all positions where a restriction enzyme
-    recognition sequence matches within a DNA sequence.
+    # Uses regular expressions to find all positions where a restriction enzyme
+    # recognition sequence matches within a DNA sequence.
     
-    Parameters:
-    - DNA_sequence (str): DNA string to scan
-    - enzyme_sequence (str): Recognition sequence of the enzyme
+    # Parameters:
+    # - DNA_sequence (str): DNA string to scan
+    # - enzyme_sequence (str): Recognition sequence of the enzyme
     
-    Returns:
-    - List of positions where matches start
-    """
+    # Returns:
+    # - List of positions where matches start
     
     # Convert to uppercase
     DNA_sequence = DNA_sequence.upper() 
@@ -26,7 +24,7 @@ def find_restriction_sites(DNA_sequence, enzyme_sequence):
     # Use re.finditer to find all match start positions
     matches = list(re.finditer(enzyme_sequence, DNA_sequence))
     if matches:
-        positions = [match.start() for match in matches]
+        positions = [match.start()+1 for match in matches]
         return positions
     else:
         return "No matches found."
