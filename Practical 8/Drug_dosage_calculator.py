@@ -33,6 +33,5 @@ def calculate_paracetamol_volume(weight_kg, strength):
 
 # Examples
 print(calculate_paracetamol_volume(30, "120 mg/5 ml"))  # Output: 18.75 ml
-print(calculate_paracetamol_volume(45, "250 mg/5 ml"))  # Output: 13.5 ml
-print(calculate_paracetamol_volume(45, "120 mg/5 ml"))  
+print(calculate_paracetamol_volume(45, "250 mg/5 ml"))  # Output: 13.5 ml 
 print(calculate_paracetamol_volume(110, "120 mg/5 ml"))   # Output: Error: Weight must be between 10 and 100 kg.
