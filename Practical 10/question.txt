@@ -1,0 +1,7 @@
+Question: How has the DALYs in China changed over time, and is the gap between China and the United Kingdom getting smaller or larger?
+
+Code starts on line: 95
+
+Discussion: The DALYs in China show a steady decrease from 1990 to 2019, while the UK's values remained relatively stable. 
+Initially, China's DALYs were much higher than the UK's, but over time the gap narrowed significantly. 
+This may reflect improved public health and healthcare systems in China over recent decades.
