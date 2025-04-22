@@ -58,9 +58,10 @@ print(dalys_data.loc[dalys_data["Year"] == 1990, "DALYs"])
 
 
 # Examining the situation across countries
-uk = dalys_data.loc[dalys_data.Entity == "United Kingdom", ["DALYs", "Year"]]
-france = dalys_data.loc[dalys_data.Entity == "France", ["DALYs", "Year"]]
+uk = dalys_data.loc[dalys_data.Entity == "United Kingdom", ["DALYs", "Year"]] #  Select the "DALYs" and "Year" columns for the UK
+france = dalys_data.loc[dalys_data.Entity == "France", ["DALYs", "Year"]] #  Select the "DALYs" and "Year" columns for France
 
+# compare the mean DALYs between the UK and France
 print("UK Mean DALYs:", uk["DALYs"].mean())
 print("France Mean DALYs:", france["DALYs"].mean())
 if uk["DALYs"].mean() > france["DALYs"].mean():
