@@ -1,4 +1,4 @@
-Question: How has the DALYs in China changed over time, and is the gap between China and the United Kingdom getting smaller or larger?
+Question: the gap between China and the United Kingdom getting smaller or larger?
 
 Code starts on line: 95
 
