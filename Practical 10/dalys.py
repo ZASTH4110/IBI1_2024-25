@@ -3,8 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 os.chdir("C:/Users/ziten/IBI1_2024-25/Practical 10")
-print(os.getcwd())      # 当前目录，像 Unix 的 pwd
-print(os.listdir())     # 当前目录下的所有文件，像 Unix 的 ls
+print(os.getcwd())    
+print(os.listdir())    
 dalys_data = pd.read_csv("dalys-rate-from-all-causes.csv")
 
 
@@ -98,3 +98,11 @@ plt.xticks(china.Year, rotation=-90 )
 plt.legend()
 plt.tight_layout()
 plt.show()
+
+a = dalys_data.loc[dalys_data["Entity"] == "China", ["DALYs"]]
+b = dalys_data.loc[dalys_data.Entity == "United Kingdom", "DALYs"]
+array_a = np.array(a)
+array_b = np.array(b)
+print(array_a - array_b) 
+
+
