@@ -85,7 +85,7 @@ def analyze_with_sax(file_path):
     return handler.max_is_a, end - start
 
 
-file = "go_obo.xml"
+file = "C:/Users/ziten/IBI1_2024-25/Practical 14/go_obo.xml"
 
 print("Analyzing with DOM...")
 dom_result, dom_time = analyze_with_dom(file)
@@ -100,8 +100,4 @@ for k, v in sax_result.items():
     print(f"{k}: {v[0]} with {v[1]} is_a elements")
 print(f"SAX parsing took {sax_time:.4f} seconds")
 
-# Comment comparison
-if dom_time < sax_time:
-    print("\n# DOM ran faster in this test")
-else:
-    print("\n# SAX ran faster in this test")
+# SAX ran faster in this test
