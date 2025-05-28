@@ -18,49 +18,66 @@
 # Fifth, plot the grid at plot_time 
 
 
-# import necessary libraries
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib import cm
 
-# make array of all susceptible population
-population = np.zeros((100,100))
-# check number：population[line, column]
-outbreak = np.random.choice(range(100),2)
-population[outbreak[0], outbreak[1]] = 1
+# Create a 100x100 grid of susceptible individuals (status = 0)
+population = np.zeros((100, 100))
 
+# Randomly infect one individual
+outbreak = np.random.choice(range(100), 2)
+population[outbreak[0], outbreak[1]] = 1  # Mark as infected (status = 1)
+
+# Define the time steps at which to capture snapshots
 plot_point = [0, 10, 50, 100]
-plots = {}
+plots = {}  # Dictionary to store snapshots
 
+# Infection and recovery probabilities
 beta = 0.3
 gamma = 0.05
-for i in range(101):
-    infected_positions = np.where(population == 1)
-    new_infections = []  # store the new infections
+
+# Save initial state before any infection spread
+plots[0] = population.copy()
+
+# Simulate from time step 1 to 100
+for i in range(1, 101):
+    infected_positions = np.where(population == 1)  # Get coordinates of infected cells
+    new_infections = []
+
     for x, y in zip(infected_positions[0], infected_positions[1]):
-             for dx in [-1, 0, 1]:
-                for dy in [-1, 0, 1]:
-                    if dx == 0 and dy == 0:
-                        continue
-                    nx, ny = x + dx, y + dy
-                    if 0 <= nx < 100 and 0 <= ny < 100 and population[nx, ny] == 0:
-                        if np.random.rand() < beta:
-                            new_infections.append((nx, ny))
-             if np.random.rand() < gamma:
-                population[x, y] = 2
+        # Check 8 neighboring cells
+        for dx in [-1, 0, 1]:
+            for dy in [-1, 0, 1]:
+                if dx == 0 and dy == 0:
+                    continue  # Skip self
+                nx, ny = x + dx, y + dy
+                if 0 <= nx < 100 and 0 <= ny < 100 and population[nx, ny] == 0:
+                    if np.random.rand() < beta:
+                        new_infections.append((nx, ny))
+        # Recovery
+        if np.random.rand() < gamma:
+            population[x, y] = 2  # Recovered
+
+    # Apply new infections
     for (nx, ny) in new_infections:
         population[nx, ny] = 1
+
+    # Save snapshot if time matches
     if i in plot_point:
         plots[i] = population.copy()
 
+# Plot results
 fig, axes = plt.subplots(1, len(plot_point), figsize=(15, 4), dpi=150)
+
 for idx, i in enumerate(plot_point):
-    axes[idx].imshow(plots[i], cmap= cm.get_cmap('viridis', 3), interpolation='nearest')
+    cmap = plt.get_cmap('viridis', 3)  # 0=susceptible, 1=infected, 2=recovered
+    axes[idx].imshow(plots[i], cmap=cmap, interpolation='nearest')
     axes[idx].set_title(f"Time {i}")
     axes[idx].axis('off')
 
 plt.tight_layout()
 plt.savefig('spatial_SIR(2D).png')
 plt.show()
+
 
 
