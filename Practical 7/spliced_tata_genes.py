@@ -44,4 +44,4 @@ with open(output_file, "w") as out:
         out.write(f">{gene} TATA_boxes:{count}\n{seq}\n")  # Write the gene name, TATA box count, and sequence to the file
 
 # Print a message indicating the process is complete
-print(f"Done! Found {len(tata_genes)} genes with TATA box and splice signal {signal}. Results saved to: {output_file}")
+print(f"Found {len(tata_genes)} genes with TATA box and splice signal {signal}. Results saved to: {output_file}")
