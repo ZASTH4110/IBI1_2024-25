@@ -14,15 +14,20 @@
 #        Set the colors for each section of the pie chart (colors)
 # Step 5:show the pie charts
 
+import matplotlib.pyplot as plt
 # create a list of countries and their populations
 uk_countries = [57.11, 3.13, 1.91, 5.45]
 uk_names = ["England", "Wales", "Northern Ireland", "Scotland"]
 
 # create a list of provinces and their populations
-china_provinces = [65.77, 41.88, 45.28, 61.27, 85.15]
+zhejiang_neighbouring_provinces = [65.77, 41.88, 45.28, 61.27, 85.15]
 china_names = ["Zhejiang", "Fujian", "Jiangxi", "Anhui", "Jiangsu"]
 
-import matplotlib.pyplot as plt
+#sort the list in ascending order
+sorted_uk = sorted(uk_countries)
+sorted_Zhejiang = sorted(zhejiang_neighbouring_provinces)
+print("the population in UK is "+str(sorted_uk))
+print("the population in zhejiang neighbouring provinces is "+str(sorted_Zhejiang))
 
 # Draw a pie chart for the UK countries
 colors = ['#4db6ac', '#ffb74d', '#9575cd', '#f06292']  # Define colors for each section of the pie chart
@@ -35,7 +40,7 @@ plt.show()
 # Draw a pie chart for the China provinces
 colors = ['#4db6ac', '#ffb74d', '#9575cd', '#f06292', '#64b5f6'] # Define colors for each section of the pie chart
 plt.figure(figsize=(8, 6))
-plt.pie(china_provinces, labels=china_names, autopct='%1.1f%%', startangle=140 ,colors=colors ,) # Create pie chart
+plt.pie(zhejiang_neighbouring_provinces, labels=china_names, autopct='%1.1f%%', startangle=140 ,colors=colors ,) # Create pie chart
 plt.title("Population Distribution in China Provinces (2022)") # Set title for the pie chart
 plt.axis('equal') # Ensure the pie chart is a circle
 plt.show()
