@@ -19,7 +19,7 @@ def calculate_paracetamol_volume(weight_kg, strength):
         concentration = 24  
     elif strength == "250 mg/5 ml":
         concentration = 50
-    else:
+    else: #ensure the right strength is used
         return "Error: Strength must be '120 mg/5 ml' or '250 mg/5 ml'."
 
     # Recommended dose is 15 mg per kg of body weight
