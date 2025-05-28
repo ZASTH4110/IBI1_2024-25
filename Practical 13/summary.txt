@@ -1,0 +1,24 @@
+the length of the human SOD2 protein： 222 amino acids
+Subcellular localisation: Mitochondrion matrix
+
+the range of percentage identities in the reported online BLAST results
+Human SOD Range: 58.1% – 100%
+
+the alignment score and percentage identity for each of the three comparisons performed using Python?
+Human vs Mouse: 
+BLOSUM62 Score: 1097.0
+Percent Identity: 90.09%
+
+Human vs Random: 
+BLOSUM62 Score: -216.0
+Percent Identity: 4.95%
+
+Mouse vs Random:
+BLOSUM62 Score: -199.0
+Percent Identity: 6.31%
+
+Which two sequences are most closely related?
+The human and mouse SOD2 proteins are most closely related 
+
+interpretation：Human and mouse SOD2 proteins share a high identity of 90.1% and have the highest alignment score among the three comparisons,
+                indicating that their amino acid sequences are highly similar.
