@@ -1,11 +1,9 @@
 def calculate_paracetamol_volume(weight_kg, strength):
 
     # Calculates the required volume of paracetamol (in ml) for a child.
-
     # Parameters:
     # - weight_kg: weight in kilograms (must be between 10 and 100 kg)
     # - strength: Paracetamol concentration, must be either "120 mg/5 ml" or "250 mg/5 ml"
-
     # Returns:
     # - Volume of paracetamol in ml needed for the correct dose
     # - Error message if input is invalid
